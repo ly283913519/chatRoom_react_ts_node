@@ -1,0 +1,7 @@
+$themeColor: #ff9902;
+
+@mixin ellipseis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
