@@ -1,7 +1,7 @@
 // 全局store文件
 import { observable, action} from "mobx";
 
-class GlobalStore {
+export class GlobalStore {
 
     // 测试用数字
     @observable
@@ -9,14 +9,14 @@ class GlobalStore {
 
     // 增加数字
     @action
-    increase = (num: number) => {
-        this.num += num;
+    increase = () => {
+        this.num++;
     };
 
     // 减少数字
     @action
-    decrease = (num: number) => {
-      this.num -= num;
+    decrease = () => {
+      this.num--;
     };
 }
 

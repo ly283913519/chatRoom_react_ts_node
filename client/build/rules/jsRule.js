@@ -12,6 +12,11 @@ module.exports = [
                 useCache: true,
                 cacheDirectory: resolves('.cache-loader'), // 指定保存缓存文件的位置
                 transpileOnly: true,
+                babelOptions: {
+                    // 不需要babelrc文件
+                    babelrc: false,
+                    plugins: 'react-hot-loader/babel'
+                },
                 getCustomTransformers: () => ({
                     before: [
                         tsImportPluginFactory({
