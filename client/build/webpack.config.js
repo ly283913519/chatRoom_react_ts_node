@@ -23,9 +23,10 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js', '.jsx','.css'],
         alias: {
             '@': resolves('src/components'),                  // 将components下的文件引用路径固定
-            '@utils': resolves('utils'),                      // 将utils下的文件引用路径固定
+            '@utils': resolves('src/utils'),                      // 将utils下的文件引用路径固定
             '@shared': resolves("src/containers/shared"),     // 将shared下的文件引用路径固定
             '@views': resolves("src/containers/views"),       // 将views下的文件引用路径固定
+            '@assets': resolves("src/assets"),                // 将assets下的文件引用路径固定
         }
     },
     // 插件
